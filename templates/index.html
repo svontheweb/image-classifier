@@ -15,6 +15,10 @@
     <input class='form-control' type='file' name='imgfile'>
     <input class='btn btn-primary mt-3' type='submit' value='Predict the image'>
   </form> 
-
+    
+    {% if prediction %}
+      <p class = 'text-center'>This image is {{prediction}}</p>
+    {% endif %}
+  
 </body>
 </html>
